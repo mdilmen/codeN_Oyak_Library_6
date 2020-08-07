@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--Project was exported from assembly: C:\Users\OYAKUSER\Desktop\codeN_Oyak_Library_4.dll-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B7BF85F9-7875-4385-9CD7-D7C1171570D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>codeN_Oyak_Library</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <ApplicationVersion>1.0.0.0</ApplicationVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="codeN.Helper">
+      <HintPath>.\codeN.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="codeN.Integration">
+      <HintPath>.\codeN.Integration.dll</HintPath>
+    </Reference>
+    <Reference Include="codeN.Process">
+      <HintPath>.\codeN.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="eBAControls">
+      <HintPath>.\eBAControls.dll</HintPath>
+    </Reference>
+    <Reference Include="eBAFlowScrAdp">
+      <HintPath>.\eBAFlowScrAdp.dll</HintPath>
+    </Reference>
+    <Reference Include="eBAPI">
+      <HintPath>.\eBAPI.dll</HintPath>
+    </Reference>
+    <Reference Include="FlowDocumentInterface">
+      <HintPath>.\FlowDocumentInterface.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="codeN_JobExecuter\Service.cs" />
+    <Compile Include="codeN_Oyak_Library\Client.cs" />
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
